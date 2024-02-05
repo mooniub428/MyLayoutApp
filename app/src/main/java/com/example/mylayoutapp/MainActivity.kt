@@ -1,5 +1,6 @@
 package com.example.mylayoutapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -16,7 +17,11 @@ class MainActivity : AppCompatActivity() {
         val editMyTextText = findViewById<EditText>(R.id.editMyTextText)
         button.setOnClickListener(View.OnClickListener {
             val myValues = editMyTextText.text.toString()
-            Toast.makeText(this, "button clicked --> "+myValues, Toast.LENGTH_LONG).show()
+           // Toast.makeText(this, "button clicked --> "+myValues, Toast.LENGTH_LONG).show()
+
+            startActivity(Intent(this, MainDashboardActivity::class.java).apply {
+                // you can add values(if any) to pass to the next class or avoid using `.apply
+            })
         })
     }
 }
