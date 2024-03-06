@@ -22,7 +22,11 @@
         android:theme="@style/Theme.MyLayoutApp"
         tools:targetApi="31">
         <activity
-            android:name=".OpenDialerActivity"
+            android:name=".ActivityLifeCycle"
+            android:exported="false"
+            android:theme="@style/Theme.MyLayoutApp" />
+        <activity
+            android:name=".ExplicitIntentsActivity"
             android:exported="false" />
         <activity
             android:name=".MainDashboardActivity"
@@ -35,7 +39,7 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
     </application>
 
 </manifest>

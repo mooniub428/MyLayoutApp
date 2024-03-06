@@ -1,5 +1,6 @@
 package com.example.mylayoutapp
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
@@ -10,15 +11,16 @@ import android.widget.Button
 import android.widget.Toast
 
 class MainDashboardActivity : AppCompatActivity() {
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_dashboard)
-        val buttonAndEditText: Button = findViewById(R.id.button1);
+        val buttonAndEditText: Button = findViewById(R.id.buttonAndEditText);
         val buttonCall: Button = findViewById(R.id.button2);
         val buttonCamera: Button = findViewById(R.id.button3);
         val buttonOpenWeb: Button = findViewById(R.id.button4);
         val buttonShare: Button = findViewById(R.id.button5);
-        val button6: Button = findViewById(R.id.button6);
+        val button_activity_life_cycle: Button = findViewById(R.id.activity_life_cycle_button);
         buttonCall.setOnClickListener(View.OnClickListener {
 
             handleButtons(2)
@@ -38,6 +40,11 @@ class MainDashboardActivity : AppCompatActivity() {
             handleButtons(5)
 
         })
+        button_activity_life_cycle.setOnClickListener(View.OnClickListener {
+
+            handleButtons(6)
+
+        })
     }
 
     private fun handleButtons(i: Int) {
@@ -48,7 +55,7 @@ class MainDashboardActivity : AppCompatActivity() {
             })
         } else
             if (i == 2) {
-                dialPhoneNumber("12225545")
+                dialPhoneNumber("+9230000000")
             } else if (i == 3) {
                 showCamera()
             } else if (i == 4) {
@@ -57,6 +64,11 @@ class MainDashboardActivity : AppCompatActivity() {
 
                 shareText("i am sharing text via intent")
             }
+            else if (i==6){
+
+                startActivity(Intent(this, ActivityLifeCycle::class.java).apply {
+                    // you can add values(if any) to pass to the next class or avoid using `.apply
+                })            }
         /* if (i == 1) {
              showToast("Button 1 clicked!")
              // Add specific actions for Button 1
