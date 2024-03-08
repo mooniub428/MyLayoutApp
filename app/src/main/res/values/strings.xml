@@ -8,6 +8,7 @@
     <string name="next">Next</string>
     <string name="previous">Previous</string>
     <string name="activity_life_cycle">ActivityLifeCycle</string>
+    <string name="alert_dialog_box">Alert Dialog</string>
 
     <string name="lorem_ipsum">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
