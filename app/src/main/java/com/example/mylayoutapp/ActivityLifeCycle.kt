@@ -2,6 +2,7 @@ package com.example.mylayoutapp
 
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
 import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
@@ -22,30 +23,37 @@ class ActivityLifeCycle : AppCompatActivity() {
     override fun onStart() {
         super.onStart()
         Log.d("ActivityLifeCycle","----onStart---")
+    Toast.makeText(this,"----onStart---",Toast.LENGTH_LONG).show()
     }
 
     override fun onResume() {
         super.onResume()
         Log.d("ActivityLifeCycle","----onResume---")
+        Toast.makeText(this,"----onResume---",Toast.LENGTH_LONG).show()
+
     }
 
     override fun onPause() {
         super.onPause()
         Log.d("ActivityLifeCycle","----onPause---")
+        Toast.makeText(this,"----onPause---",Toast.LENGTH_LONG).show()
     }
 
     override fun onStop() {
         super.onStop()
         Log.d("ActivityLifeCycle","----onStop---")
+        Toast.makeText(this,"----onStop---",Toast.LENGTH_LONG).show()
     }
 
     override fun onDestroy() {
         super.onDestroy()
         Log.d("ActivityLifeCycle","----onDestroy---")
+        Toast.makeText(this,"----onDestroy---",Toast.LENGTH_LONG).show()
     }
 
     override fun onRestart() {
         super.onRestart()
         Log.d("ActivityLifeCycle","----onRestart---")
+        Toast.makeText(this,"----onRestart---",Toast.LENGTH_LONG).show()
     }
 }

@@ -2,46 +2,53 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_linearlayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:gravity="center"
-    android:id="@+id/root_linearlayout"
+    android:orientation="vertical"
     tools:context=".MainDashboardActivity">
+
     <Button
         android:id="@+id/buttonAndEditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button / EditText"/>
+        android:text="Button / EditText" />
+
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Call"/>
+        android:text="Call" />
+
     <Button
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Camera"/>
+        android:text="Camera" />
+
     <Button
         android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Open kfueit website"/>
+        android:text="Open kfueit website" />
+
     <Button
         android:id="@+id/button5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Share"/>
+        android:text="Share" />
+
     <Button
         android:id="@+id/activity_life_cycle_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/activity_life_cycle"/>
+        android:text="@string/activity_life_cycle" />
+
     <Button
         android:id="@+id/alert_dialog_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/alert_dialog_box"/>
+        android:text="@string/alert_dialog_box" />
 
 </LinearLayout>
