@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SpinnerActivity">
+    <TextView
+        android:id="@+id/spinner_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Simple spinner"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="12pt"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"/>
+
+    <Spinner
+        android:layout_centerInParent="true"
+        android:id="@+id/fruit_spinner"
+        android:background="@color/cardview_shadow_start_color"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+</RelativeLayout>
